@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+    color: #333;
+}
+
+nav {
+    background: #24160e;
+    color: #f4cc75;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #f4cc75;
+}
+
+.hero {
+    min-height: 75vh;
+    background: linear-gradient(#0008, #0008),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400")
+    center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 6vw, 55px);
+}
+
+.btn {
+    background: #d5a342;
+    color: #24160e;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px;
+}
+
+.category {
+    text-align: center;
+    color: #8b5a17;
+    margin: 25px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+    justify-content: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px #0002;
+    padding-bottom: 18px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    color: #a66c13;
+    font-weight: bold;
+}
+
+.about {
+    max-width: 750px;
+    margin: 70px auto;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.about h1, .about h3 {
+    color: #8b5a17;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #24160e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .menu {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
